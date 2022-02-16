@@ -10,7 +10,16 @@
         <a class="nav-link" {{ ( $title === 'About') ? 'active' : '' }} href="/about">About</a>
         <a class="nav-link" {{ ( $title === 'Gallery') ? 'active' : '' }} href="/gallery">Gallery</a>
         <a class="nav-link" {{ ( $title === 'Contacts') ? 'active' : '' }}" href="/contacts">Contact Us</a>
-      </div>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{route ('login')}}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route ('register')}}">Register</a>
+          </li>
+        </ul>
+       </div>
     </div>
   </div>
 </nav>
